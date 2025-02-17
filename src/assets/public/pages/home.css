@@ -1,0 +1,54 @@
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.home .overlay {
+    padding: 50px;
+    border-radius: 10px;
+    width: 70%;
+}
+
+.home .overlay h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.home .overlay p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.email-signup {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.email-signup input {
+    font-size: large;
+    padding: 10px;
+    width: 400px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.501);
+}
+
+.email-signup button {
+    font-weight: bold;
+    background: #e50914;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}

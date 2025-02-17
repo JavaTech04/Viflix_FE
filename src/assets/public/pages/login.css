@@ -1,0 +1,13 @@
+.login {
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.login .overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
