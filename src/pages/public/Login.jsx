@@ -4,9 +4,24 @@ import { InputText, Button, Checkbox } from "~/common/primereactImports.js";
 import "~/assets/public/pages/login.css";
 import GOOGLE_ICON from "~/assets/images/google-pngrepo-com.png";
 import { useNavigate } from "react-router-dom";
+import { OAuthConfig } from "../../configurations/configuration";
 
 export const Login = () => {
   const navigate = useNavigate();
+
+  const handleClick = () => {
+    const callbackUrl = OAuthConfig.redirectUri;
+    const authUrl = OAuthConfig.authUri;
+    const googleClientId = OAuthConfig.clientId;
+
+    const targetUrl = `${authUrl}?redirect_uri=${encodeURIComponent(
+      callbackUrl
+    )}&response_type=token&client_id=${googleClientId}&scope=openid%20email%20profile`;
+
+    console.log(targetUrl);
+
+    window.location.href = targetUrl;
+  };
 
   const {
     register,
@@ -53,6 +68,7 @@ export const Login = () => {
 
             <Button
               type="button"
+              onClick={handleClick}
               className="w-full"
               style={{
                 backgroundColor: "#333333",
