@@ -36,7 +36,7 @@
     padding: 10px;
     width: 400px;
     height: 50px;
-    border: none;
+    border: 1px solid #d2d2d2;
     border-radius: 5px;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.501);
@@ -51,4 +51,33 @@
     cursor: pointer;
     border-radius: 5px;
     font-size: 1rem;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+    .home {
+        height: 50vh;
+    }
+
+    .home .overlay {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .home .overlay h1 {
+        font-size: 2rem;
+    }
+
+    .home .overlay p {
+        font-size: 1rem;
+    }
+
+    .email-signup {
+        flex-direction: column;
+    }
+
+    .email-signup input {
+        border: 1px solid #d2d2d2;
+        width: 100%;
+    }
 }
