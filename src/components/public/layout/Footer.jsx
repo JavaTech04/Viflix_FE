@@ -4,7 +4,7 @@ export const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer-container">
-                <p>Questions? <a href="#">Contact us.</a></p>
+                <p>Questions? <a style={{ color: "#b0afaf" }} href="https://www.facebook.com/NongHoangVu04">Contact us.</a></p>
                 <div className="footer-links">
                     <div>
                         <a href="#">FAQ</a>
@@ -36,7 +36,7 @@ export const Footer = () => {
                         <option>Vietnamese</option>
                     </select>
                 </div>
-                <p>Viflix Vietnam</p>
+                <p>© 2025 VIFLIX Vietnam by <a href="https://www.facebook.com/NongHoangVu04" style={{ color: "#b0afaf" }}>Nong Hoang Vu</a></p>
             </div>
         </footer>
     );

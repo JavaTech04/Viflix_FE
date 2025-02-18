@@ -52,3 +52,37 @@
 .sign-in-btn:hover {
     background-color: #f40612;
 }
+
+
+@media screen and (max-width: 768px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        background: transparent;
+    }
+
+    .logo {
+        height: 50px;
+    }
+
+    .header-buttons {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .sign-in-btn {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    .language-select {
+        font-size: 14px;
+        padding: 5px;
+    }
+}
