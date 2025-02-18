@@ -15,6 +15,16 @@
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     padding: 20px;
+}
+
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+    .main-area {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
 }

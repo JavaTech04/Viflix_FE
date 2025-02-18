@@ -22,7 +22,8 @@ export const Login = () => {
   return (
     <div className="login">
       <div className="overlay">
-        <div className="p-4 border-round-lg surface-overlay shadow-2 text-white w-25" style={{ backgroundColor: "rgba(0, 0, 0, 0.7)" }}>
+        <div className="border-round-lg surface-overlay shadow-2 text-white w-full"
+          style={{ maxWidth: "400px", backgroundColor: "rgba(0, 0, 0, 0.7)" }}>
           <h1 className="text-4xl font-bold mb-3">Sign In</h1>
           <form onSubmit={handleSubmit(onSubmit)} className="flex flex-column gap-3">
             <div className="mt-3">
@@ -79,7 +80,7 @@ export const Login = () => {
             </div>
 
             <p className="text-center mt-3 text-sm text-white">
-              New to Netflix? <a href="#" onClick={() => navigate("/")} className="text-primary">Sign up now.</a>
+              New to Viflix? <a href="#" onClick={() => navigate("/")} className="text-primary">Sign up now.</a>
             </p>
 
             <p className="text-center text-xs text-white opacity-70">
